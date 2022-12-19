@@ -71,8 +71,11 @@ ln -sf /usr/share/zoneinfo/America/Santiago /etc/localtime
 hwclock --systohc
 
 echo LANG=es_CL.UTF-8 >> /etc/locale.conf
+
 echo KEYMAP=es >> /etc/vconsole.conf
+
 nano /etc/locale.gen (es_CL.UTF-8)
+
 locale-gen
 
 echo zen >> /etc/hostname
