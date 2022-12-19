@@ -20,6 +20,7 @@ reflector -c Chile -a 6 --sort rate --save /etc/pacman.d/mirrorlist
 pacman -Syy
 
 reflector --country Chile --age 12 --protocol https --sort rate --save /etc/pacman.d/mirrorlist
+
 reflector --latest 20 --age 1 --country 'Chile' --protocol https --sort rate --save /etc/pacman.d/mirrorlist
 
 lsblk
