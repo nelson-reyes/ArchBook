@@ -1,6 +1,8 @@
 # ArchBook
 Arch Linux on MacBook Pro (Retina, 13-inch, Early 2015)
 
+MacBook Pro 
+
 ip link
 
 ip link set WLAN up # Si no funciona
@@ -50,7 +52,7 @@ pacstrap /mnt base base-devel linux-zen linux-zen-headers linux-firmware nano vi
 genfstab -U /mnt >> /mnt/etc/fstab 
 
 cat /mnt/etc/fstab
----------------------------------------------------------------------------
+
 arch-chroot /mnt
 
 dd if=/dev/zero of=/swapfile bs=1G count=8 status=progress
